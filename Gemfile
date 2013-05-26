@@ -31,3 +31,13 @@ group :test do
   gem 'launchy'
   gem 'capybara'
 end
+group :development, :test do
+  gem 'rspec-rails'
+  gem 'factory_girl_rails'
+end
+group :test do
+  gem 'database_cleaner'
+  gem 'email_spec'
+  gem 'launchy'
+  gem 'capybara'
+end
