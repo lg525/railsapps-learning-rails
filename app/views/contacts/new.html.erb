@@ -1,0 +1,8 @@
+<h3>Contact</h3>
+<%= simple_form_for @contact, :html => {:class => 'form-vertical' } do |f| %>
+  <%= f.error_notification %>
+  <%= f.input :name, :autofocus => true %>
+  <%= f.input :email, :required => true %>
+  <%= f.input :content, :input_html => { :class => "span6" } %>
+  <%= f.button :submit, 'Submit', :class => 'btn-primary' %>
+<% end %>

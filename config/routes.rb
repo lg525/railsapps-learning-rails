@@ -1,4 +1,4 @@
 RailsappsLearningRails::Application.routes.draw do
-  match 'contact' => 'contacts#process_form'
+  resources :contacts
   root :to => 'home#index'
 end
